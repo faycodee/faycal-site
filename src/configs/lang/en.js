@@ -1,7 +1,7 @@
 // src/configs/lang/en.js
 export default {
   site: {
-    name: "Yassine El Amrani",
+    name: "Faycal oumzil",
     title: "Professionelle Pflegefachkraft",
     description: "Engagierte Pflegefachkraft mit fundierter Erfahrung in der Patientenversorgung, medizinischen Assistenz und Gesundheitsförderung.",
     heroPhrases: [
