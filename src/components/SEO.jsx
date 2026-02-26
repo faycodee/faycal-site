@@ -8,7 +8,7 @@ const SEO = () => {
   const { t, lang } = useTranslation();
 
   // URL base de tu sitio
-  const baseUrl = SITE_DATA.siteUrl || 'https://yasik-dev.vercel.app';
+  const baseUrl = SITE_DATA.siteUrl ;
   const description = t.site.description || 'Portafolio personal de un desarrollador con experiencia en React, Node.js y DevOps.';
   const title = `${t.site.name} - ${t.site.title}`;
   const siteName = t.site.name;

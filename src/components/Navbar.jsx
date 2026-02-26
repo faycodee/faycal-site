@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <h1 className="text-xl font-bold text-emerald-600 dark:text-emerald-400">
-           Portfolio
+           Faycal Oumzil
           </h1>
 
           {/* Desktop Menu */}

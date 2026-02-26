@@ -10,7 +10,7 @@ const SEOManual = () => {
 
   const title = `${t.site.name} - ${t.site.title}`;
   const description = t.site.description || 'Portafolio personal de un desarrollador con experiencia en React, Node.js y DevOps.';
-  const url = SITE_DATA.siteUrl || 'https://yasik-dev.vercel.app'; // Cambia por tu URL
+  const url = SITE_DATA.siteUrl 
   const imageUrl = SITE_DATA.icon;
   const siteName = t.site.name;
 

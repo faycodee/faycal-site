@@ -49,6 +49,6 @@ export const SKILLS_DATA = {
   languages: [
     { lang: "Deutsch", level: "B2 (Zertifiziert)", percentage: 80 },
     { lang: "Arabisch", level: "Muttersprache", percentage: 100 },
-    { lang: "Französisch", level: "Fließend", percentage: 85 }
+    { lang: "Englisch", level: "Fließend", percentage: 50 }
   ]
 };

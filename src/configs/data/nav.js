@@ -3,7 +3,7 @@
 export const NAV_DATA = [
 
   { id: "about", href: "#about", label: "Über mich" },
-  { id: "nachweise", href: "#nachweise", label: "Nachweise" },
+  { id: "nachweise", href: "#fotos", label: "Fotos" },
   { id: "skills", href: "#skills", label: "Fähigkeiten" },
   // { id: "projects", href: "#projects", label: "Projekte" },
   { id: "experience", href: "#experience", label: "Erfahrung" },

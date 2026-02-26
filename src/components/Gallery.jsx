@@ -1,64 +1,65 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay, EffectCoverflow } from 'swiper/modules';
-import { FaCertificate, FaExternalLinkAlt } from 'react-icons/fa';
+import { Swiper, SwiperSlide } from "swiper/react";
+import {
+  Navigation,
+  Pagination,
+  Autoplay,
+  EffectCoverflow,
+} from "swiper/modules";
+import { FaCertificate, FaExternalLinkAlt } from "react-icons/fa";
 
 // Swiper Styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/effect-coverflow';
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/effect-coverflow";
 
 const Gallery = () => {
   // Daten direkt hier definieren (Kein t mehr nötig)
   const galleryItems = [
-    { 
-      title: "Im Pflegeheim", 
-      category: "Erfahrung", 
-      img: "/gallery/1.png" 
+    {
+      title: "Im Pflegeheim",
+      category: "Erfahrung",
+      img: "/gallery/1.jpeg",
     },
-    { 
-      title: "In Bildungseinrichtung", 
-      category: "Bildung", 
-      img: "/gallery/6.jfif"     },
-    { 
-      title: "In  Krankenhaus", 
-      category: "Erfahrung", 
-      img: "/gallery/2.jpg"     },
-      { 
-        title: "In  Krankenhaus", 
-        category: "Erfahrung", 
-        img: "/gallery/8.jfif"     },
-    { 
-      title: "In  Krankenhaus", 
-      category: "Erfahrung", 
-      img: "/gallery/3.png"     },
-      { 
-        title: " Krankenhaus", 
-        category: "Erfahrung", 
-        img: "/gallery/7.jpg"     },
-    { 
-      title: " Bildungseinrichtung", 
-      category: "Bildung", 
-      img: "/gallery/4.jpg"     },
-    { 
-      title: "In  Krankenhaus", 
-      category: "Erfahrung", 
-      img: "/gallery/5.jpg"     },
-      { 
-        title: "In  Krankenhaus", 
-        category: "Bildung", 
-        img: "/gallery/9.jpg"     },
-     
- 
+    {
+      title: "In Bildungseinrichtung",
+      category: "Bildung",
+      img: "/gallery/6.jpeg",
+    },
+    {
+      title: "In  Krankenhaus",
+      category: "Erfahrung",
+      img: "/gallery/2.jpeg",
+    },
 
- 
-   
+    {
+      title: "In  Krankenhaus",
+      category: "Erfahrung",
+      img: "/gallery/3.png",
+    },
+    {
+      title: " Krankenhaus",
+      category: "Erfahrung",
+      img: "/gallery/7.jpeg",
+    },
+    {
+      title: " Bildungseinrichtung",
+      category: "Bildung",
+      img: "/gallery/4.webp",
+    },
+    {
+      title: "In  Krankenhaus",
+      category: "Erfahrung",
+      img: "/gallery/5.jpeg",
+    },
   ];
 
   return (
-    <section id="nachweise" className="py-24 bg-[#f8fafc] dark:bg-[#0f172a] overflow-hidden">
+    <section
+      id="fotos"
+      className="py-24 bg-[#f8fafc] dark:bg-[#0f172a] overflow-hidden"
+    >
       <div className="container mx-auto px-6">
-        
         {/* Header */}
         <div className="text-left mb-16 max-w-2xl">
           <div className="flex items-center gap-3 mb-4">
@@ -67,21 +68,21 @@ const Gallery = () => {
                 02
               </span>
               <h2 className="text-xs font-black uppercase tracking-[0.4em] text-emerald-600/80">
-              Erfahrungen
+                Erfahrungen
               </h2>
             </div>
           </div>
           <h3 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">
-            Nachweise & <span className="text-emerald-600">Erfahrungen.</span>
+            Bilder von Erinnerungen
           </h3>
         </div>
 
         <Swiper
           modules={[Navigation, Pagination, Autoplay, EffectCoverflow]}
-          effect={'coverflow'}
+          effect={"coverflow"}
           grabCursor={true}
           centeredSlides={true}
-          slidesPerView={'auto'}
+          slidesPerView={"auto"}
           coverflowEffect={{
             rotate: 5,
             stretch: 0,
@@ -101,32 +102,37 @@ const Gallery = () => {
           {galleryItems.map((item, index) => (
             <SwiperSlide key={index} className="max-w-[380px]">
               <div className="group relative bg-white dark:bg-slate-800 rounded-[2.5rem] overflow-hidden border border-slate-200 dark:border-slate-700 shadow-2xl transition-all duration-500 hover:-translate-y-2">
-                
                 {/* Bild Bereich */}
                 <div className="aspect-[4/5] overflow-hidden">
-                  <img 
-                    src={item.img} 
-                    alt={item.title} 
+                  <img
+                    src={item.img}
+                    alt={item.title}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                 </div>
 
                 {/* Content Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
-                
+
                 <div className="absolute bottom-0 left-0 w-full p-8">
-                  <span className="inline-block px-3 py-1 bg-emerald-500 text-[10px] font-black text-white uppercase tracking-widest rounded-md mb-3">
+                  {/* <span className="inline-block px-3 py-1 bg-emerald-500 text-[10px] font-black text-white uppercase tracking-widest rounded-md mb-3">
                     {item.category}
-                  </span>
-                  <h4 className="text-xl font-bold text-white mb-3">{item.title}</h4>
-                  <div className="flex items-center gap-2 text-emerald-400 text-xs font-bold uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
+                  </span> */}
+                  {/* <h4 className="text-xl font-bold text-white mb-3">{item.title}</h4> */}
+                  {/* <div className="flex items-center gap-2 text-emerald-400 text-xs font-bold uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
                     <FaExternalLinkAlt /> Dokument öffnen
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
+
+        <div className="mt-16 max-w-4xl mx-auto ">
+          <video className="rounded-4xl" controls >
+            <source src="/gallery/vid.mp4" type="video/mp4" />
+          </video>
+        </div>
       </div>
 
       <style jsx="true">{`

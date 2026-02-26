@@ -22,14 +22,7 @@ const Contact = () => {
       link: social.whatsapp || "#",
       color: "bg-green-50 text-green-600 dark:bg-green-900/20",
     },
-    {
-      id: 3,
-      title: "LinkedIn",
-      value: "Berufliches Profil",
-      icon: <FaLinkedin />,
-      link: social.linkedin || "#",
-      color: "bg-slate-50 text-slate-700 dark:bg-slate-900/20 dark:text-slate-300",
-    },
+    
   ];
 
   return (
@@ -84,7 +77,7 @@ const Contact = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
               <span className="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
             </div>
-            <span className="font-bold tracking-wide uppercase text-sm italic">Bereit für Visum & Umzug</span>
+            <span className="font-bold tracking-wide uppercase text-sm italic">Bereit für  Umzug</span>
           </div>
         </div>
 

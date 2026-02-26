@@ -90,14 +90,14 @@ const Hero = () => {
               className="relative w-72 h-[400px] object-cover rounded-[2rem] shadow-2xl grayscale-[20%] hover:grayscale-0 transition-all duration-500"
             />
             {/* Experience Badge */}
-            <div className="absolute -bottom-6 -right-6 bg-white dark:bg-slate-800 p-4 rounded-xl shadow-xl border-l-4 border-emerald-500">
+            {/* <div className="absolute -bottom-6 -right-6 bg-white dark:bg-slate-800 p-4 rounded-xl shadow-xl border-l-4 border-emerald-500">
               <p className="text-xs text-slate-500 dark:text-slate-400 font-bold uppercase tracking-wider">
                 Status
               </p>
               <p className="text-emerald-600 dark:text-emerald-400 font-bold">
                 B2 Zertifiziert
               </p>
-            </div>
+            </div> */}
           </div>
 
           {/* Right: Content */}
@@ -138,11 +138,13 @@ const Hero = () => {
             {/* Professional Actions */}
             <div className="animate-text flex flex-col sm:flex-row gap-5 justify-center lg:justify-start">
               <a
+               
                 href={SITE_DATA.cvUrl}
+                target="_blank"
                 className="group flex items-center justify-center gap-3 px-10 py-4 bg-slate-900 dark:bg-emerald-600 hover:bg-emerald-600 dark:hover:bg-emerald-700 text-white rounded-full transition-all duration-300 shadow-lg shadow-emerald-900/20"
               >
                 <FaFileDownload className="group-hover:bounce" />
-                <span className="font-semibold">Lebenslauf PDF</span>
+                <span className="font-semibold">Unterlagen PDF</span>
               </a>
 
               <div className="flex items-center gap-4 px-6">

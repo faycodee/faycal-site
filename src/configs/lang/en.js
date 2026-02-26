@@ -14,7 +14,7 @@ export default {
   nav: {
    
     about: "Über mich",
-    nachweise: "Nachweise",
+    nachweise: "Fotos",
     skills: "Fähigkeiten",
     projects: "Projekte",
     experience: "Erfahrung",
@@ -33,9 +33,14 @@ export default {
   about: {
     title: "Über mich",
     bio: [
-      "Engagierte Pflegefachkraft mit fundierter Ausbildung und großer Leidenschaft für die ganzheitliche Patientenversorgung.",
-      "Mein Ziel ist es, meine fachlichen Kompetenzen und meine interkulturelle Erfahrung in das deutsche Gesundheitssystem, idealerweise in Bayern, einzubringen.",
-      "Ich verfüge über das TELC B2 Sprachzertifikat und befinde mich aktuell im Anerkennungsverfahren für meine beruflichen Qualifikationen."
+      `Ich bin eine hilfsbereite Person und empfinde eine große Freude dabei, anderen
+Menschen zu helfen. Das ist der Hauptgrund, warum ich mich für diesen Beruf
+entschieden habe. Durch meine Praktika in der Pflege und beim Roten Halbmon
+(Rotes Kreuz) habe ich gemerkt, dass die Unterstützung von Patienten für mich
+nicht nur eine Arbeit, sondern eine Herzensangelegenheit ist. Ich möchte meine
+Empathie und meine Deutschkenntnisse nutzen, um pflegebedürftige
+Menschen in Deutschland bestmöglich zu betreuen.
+    `
     ],
     videoTitle: "Persönliche Vorstellung",
     videoSubtitle: "Hören Sie mich Deutsch sprechen & erfahren Sie mehr über meine Motivation."

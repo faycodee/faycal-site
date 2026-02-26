@@ -1,28 +1,38 @@
-import { EXPERIENCE_DATA } from '../configs/data/experience';
-import FadeInSection from '../components/FadeInSection';
-import { FaUserGraduate, FaHospital, FaClinicMedical, FaMapMarkerAlt } from 'react-icons/fa';
+import { EXPERIENCE_DATA } from "../configs/data/experience";
+import FadeInSection from "../components/FadeInSection";
+import {
+  FaUserGraduate,
+  FaHospital,
+  FaClinicMedical,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
 
 const Experience = () => {
   // Mapping Icons based on type
   const getIcon = (iconType) => {
     switch (iconType) {
-      case 'education': return <FaUserGraduate />;
-      case 'work': return <FaHospital />;
-      default: return <FaClinicMedical />;
+      case "education":
+        return <FaUserGraduate />;
+      case "work":
+        return <FaHospital />;
+      default:
+        return <FaClinicMedical />;
     }
   };
 
   return (
-    <section id="experience" className="py-24 px-6 bg-white dark:bg-[#0f172a] transition-colors duration-500">
+    <section
+      id="experience"
+      className="py-24 px-6 bg-white dark:bg-[#0f172a] transition-colors duration-500"
+    >
       <div className="container mx-auto max-w-5xl">
-        
         {/* Header - Professionell & Linksbündig */}
         <div className="mb-20 border-l-4 border-emerald-500 pl-6">
           <h2 className="text-sm font-black uppercase tracking-[0.3em] text-emerald-600 mb-2">
             Werdegang
           </h2>
           <h3 className="text-4xl font-bold text-slate-900 dark:text-white">
-            Berufserfahrung & <span className="text-emerald-600">Ausbildung.</span>
+            Berufserfahrung
           </h3>
         </div>
 
@@ -34,7 +44,6 @@ const Experience = () => {
             {EXPERIENCE_DATA.map((exp, i) => (
               <FadeInSection key={i} delay={i * 0.1}>
                 <div className="relative pl-12 md:pl-20 group">
-                  
                   {/* Timeline Dot / Icon */}
                   <div className="absolute left-0 md:left-4 top-0 w-8 h-8 md:w-10 md:h-10 bg-white dark:bg-slate-900 border-2 border-emerald-500 rounded-full flex items-center justify-center text-emerald-600 z-10 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-lg">
                     {getIcon(exp.icon)}
@@ -61,7 +70,7 @@ const Experience = () => {
                       <span className="w-4 h-px bg-emerald-500"></span>
                       {exp.company}
                     </p>
-                    
+
                     <p className="text-slate-600 dark:text-slate-400 leading-relaxed font-light">
                       {exp.desc}
                     </p>

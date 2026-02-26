@@ -8,7 +8,7 @@ const About = () => {
 
   // Fake Data for a Moroccan Pfleger
   const stats = [
-    { icon: <FaGraduationCap />, label: "Abschluss", value: "Staatliches Diplom" },
+    { icon: <FaGraduationCap />, label: "Abschluss", value: "Allgemeine Hochschulreife (Abitur)" },
     { icon: <FaMapMarkerAlt />, label: "Wohnort", value: "Fes, Marokko" },
     { icon: <FaCalendarAlt />, label: "Bereit ab", value: "März 2026" },
     { icon: <FaCheckDouble />, label: "Deutsch", value: "B2 Zertifiziert" },
@@ -76,7 +76,7 @@ const About = () => {
                 <div className="relative aspect-video overflow-hidden rounded-2xl bg-slate-900 shadow-[0_32px_64px_-15px_rgba(0,0,0,0.3)] dark:shadow-[0_32px_64px_-15px_rgba(0,0,0,0.6)]">
                   <iframe
                     className="w-full h-full"
-                    src={`https://www.youtube.com/embed/${videoId}?modestbranding=1&rel=0`}
+                    // src={`https://www.youtube.com/embed/${videoId}?modestbranding=1&rel=0`}
                     title="Video Vorstellung"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
